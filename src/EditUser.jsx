@@ -57,7 +57,7 @@ function EditUser() {
     
     },
         onSubmit: async (values) => {
-       await axios.put(`https://6300f2429a1035c7f8fb32ef.mockapi.io/users/users/${params.id}`, values)
+       await axios.put(`https://6296c83157b6258606132303.mockapi.io/anyusers/${params.id}`, values)
       navigate("/portal/users");
         }
     
@@ -70,7 +70,7 @@ useEffect (() => {
 
 let loadUser = async () => {
   try{
-    let user = await axios.get(`https://6300f2429a1035c7f8fb32ef.mockapi.io/users/users/${params.id}`);
+    let user = await axios.get(`https://6296c83157b6258606132303.mockapi.io/anyusers/${params.id}`);
     formik.setValues({
          name: user.data.name ,
           position: user.data.position,

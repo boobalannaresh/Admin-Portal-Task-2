@@ -51,7 +51,7 @@ function CreateProduct() {
 
     },
     onSubmit: async (values) => {
-     let products = await axios.post("https://6300f2429a1035c7f8fb32ef.mockapi.io/users/products", values)
+     let products = await axios.post("https://6296c83157b6258606132303.mockapi.io/products", values)
    alert(" New Product has created Done");
    navigate("/portal/products");
     }

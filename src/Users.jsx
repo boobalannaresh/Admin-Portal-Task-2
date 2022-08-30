@@ -14,7 +14,7 @@ function Users() {
 
     let loadData = async () => {
         setLoading(true)
-        let users = await axios.get("https://6300f2429a1035c7f8fb32ef.mockapi.io/users/users");
+        let users = await axios.get("https://6296c83157b6258606132303.mockapi.io/anyusers");
         console.log(users)
         setUsers(users.data)
         setLoading(false)
@@ -24,7 +24,7 @@ let userDelete = async (userid) => {
     try {
         let ask = window.confirm("Are You Sure ? Do You Want to Delete this Data ")
         if (ask){
-            await axios.delete(`https://6300f2429a1035c7f8fb32ef.mockapi.io/users/users/${userid}`)
+            await axios.delete(`https://6296c83157b6258606132303.mockapi.io/anyusers/${userid}`)
             loadData() 
         }
       
@@ -48,7 +48,7 @@ let userDelete = async (userid) => {
                         <div className="spinner-border text-info" role="status">
                           
                         </div>
-                        <span className="visually-hidden">Waiting...</span>
+                        <span className="visually-hidden"><h4>Loading...</h4></span>
                     </div>
                
          

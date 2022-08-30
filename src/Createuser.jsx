@@ -44,7 +44,7 @@ const navigate = useNavigate();
 
     },
     onSubmit : async (values) => {
-   let users = await axios.post("https://6300f2429a1035c7f8fb32ef.mockapi.io/users/users", values);
+   let users = await axios.post("https://6296c83157b6258606132303.mockapi.io/anyusers", values);
    alert(" New User has created Done");
    navigate("/portal/users");
 

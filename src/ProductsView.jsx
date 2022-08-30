@@ -20,7 +20,7 @@ const [productData, setProductData] = useState({})
 
   let loadUser = async () => {
     try {
-    let product = await axios.get(`https://6300f2429a1035c7f8fb32ef.mockapi.io/users/products/${params.productid}`);
+    let product = await axios.get(`https://6296c83157b6258606132303.mockapi.io/products/${params.productid}`);
     setProductData (product.data); 
   } catch (error) {
 

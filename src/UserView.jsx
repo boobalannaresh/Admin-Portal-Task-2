@@ -20,7 +20,7 @@ function Userview() {
 
   let loadUser = async () => {
     try {
-    let user = await axios.get(`https://6300f2429a1035c7f8fb32ef.mockapi.io/users/users/${params.userid}`);
+    let user = await axios.get(`https://6296c83157b6258606132303.mockapi.io/anyusers/${params.userid}`);
     setUserData (user.data); 
   } catch (error) {
 

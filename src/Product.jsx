@@ -14,7 +14,7 @@ function Products() {
 
     let loadData = async () => {
         setLoading(true)
-        let products = await axios.get("https://6300f2429a1035c7f8fb32ef.mockapi.io/users/products");
+        let products = await axios.get("https://6296c83157b6258606132303.mockapi.io/products");
         console.log(products)
         setProducts(products.data)
         setLoading(false)
@@ -23,7 +23,7 @@ function Products() {
         try {
             let ask = window.confirm("Are You Sure ? Do You Want to Delete this Data ")
             if (ask){
-                await axios.delete(`https://6300f2429a1035c7f8fb32ef.mockapi.io/users/products/${id}`)
+                await axios.delete(`https://6296c83157b6258606132303.mockapi.io/products/${id}`)
             loadData()  
             }
            
@@ -51,7 +51,7 @@ function Products() {
                         <div className="spinner-border text-info" role="status">
                           
                         </div>
-                        <span className="visually-hidden">Moving...</span>
+                        <span className="visually-hidden"><h4>Loading...</h4></span>
                     </div>
                
          

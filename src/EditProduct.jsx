@@ -50,7 +50,7 @@ const navigate = useNavigate()
 
         },
         onSubmit: async (values) => {
-         await axios.put(`https://6300f2429a1035c7f8fb32ef.mockapi.io/users/products/${params.id}`, values)
+         await axios.put(`https://6296c83157b6258606132303.mockapi.io/products/${params.id}`, values)
         navigate("/portal/products/")
         }
     });
@@ -61,7 +61,7 @@ const navigate = useNavigate()
 
     let loadUser = async () => {
         try{
-            let product = await axios.get(`https://6300f2429a1035c7f8fb32ef.mockapi.io/users/products/${params.id}`)
+            let product = await axios.get(`https://6296c83157b6258606132303.mockapi.io/products/${params.id}`)
         formik.setValues({
             name : product.data.name,
             model : product.data.model,
